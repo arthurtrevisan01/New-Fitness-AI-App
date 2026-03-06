@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Elite Workout PWA
 
-## Getting Started
+Um Progressive Web App (PWA) de treinos de altíssimo padrão, com estética de luxo e inteligência artificial avançada.
 
-First, run the development server:
+## 💎 Estética e UI/UX
+- **Dark Mode Nobre**: Fundo Obsidian Black e acentos em Ouro Envelhecido.
+- **Glassmorphism**: Efeito de vidro fosco em componentes e modais.
+- **Animações Fluidas**: Desenvolvido com Framer Motion para uma experiência premium.
+- **Otimizado para iOS**: Respeita safe area, Dynamic Island e possui meta tags para modo standalone.
 
+## 🧠 Inteligência Artificial (Gemini)
+- **O Cientista**: Gera rotinas de treino baseadas nos artigos científicos mais recentes sobre hipertrofia e biomecânica.
+- **O Crítico**: Analisa seu volume de treino, cargas e densidade, fornecendo um feedback técnico e direto.
+
+## 🚀 Como Rodar o Projeto
+
+### 1. Clonar e Instalar
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <URL_DO_SEU_REPOSITORIO>
+cd <NOME_DA_PASTA>
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Configurar Variáveis de Ambiente
+Crie um arquivo `.env.local` na raiz do projeto e adicione sua chave do Gemini:
+```env
+NEXT_PUBLIC_GEMINI_API_KEY=AIzaSyD-n288CnAswuQ8pASpZ5li6Fo3FP47Pac
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Iniciar em Desenvolvimento
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Produção e Deploy
+Para tornar o app público e acessível de qualquer dispositivo, a melhor opção é o **Vercel**:
+1. Conecte seu repositório GitHub ao [Vercel](https://vercel.com).
+2. Adicione a variável `NEXT_PUBLIC_GEMINI_API_KEY` nas configurações de Environment Variables do Vercel.
+3. O deploy será automático.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠 Tech Stack
+- **Next.js 15 (App Router)**
+- **Tailwind CSS v4**
+- **Framer Motion**
+- **Google Generative AI SDK**
+- **Lucide React**
